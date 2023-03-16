@@ -2,3 +2,5 @@ env/
 *.jpg
 *.zip
 DAVIS/
+merge_script.py
+video.py
