@@ -1,12 +1,15 @@
 import cv2
 import os
+import time 
 
-name = 'image'
+start = time.time()
+
+name = 'image1'
 exten = '.jpg'
 img = cv2.imread(f'./{name}{exten}')
 yy = 0
-crop_img_height = 180
-crop_img_width = 320
+crop_img_height = 108
+crop_img_width = 192
 row_counter = 0
 for row in range(int(img.shape[0] / crop_img_height)):
     column_counter = 0
@@ -24,3 +27,6 @@ for row in range(int(img.shape[0] / crop_img_height)):
         cv2.waitKey(0)
     row_counter += 1
     yy += crop_img_height
+
+end = time.time() - start
+print(end)
