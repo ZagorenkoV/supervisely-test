@@ -3,3 +3,8 @@ env/
 *.zip
 DAVIS/
 video.py
+visualizer_davis/
+sliced_images/
+davis_video/
+visualizer_davis/
+.mp4
